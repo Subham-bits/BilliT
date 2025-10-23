@@ -15,6 +15,11 @@
     },
     "android": {
       "package": "com.billit.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0a71426f-82fe-4419-ad97-5d716e791bd5"
+      }
     }
   }
 }

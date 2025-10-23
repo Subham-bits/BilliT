@@ -320,37 +320,37 @@ const NewBillInputScreen = ({ navigation, route }) => {
       </Card>
 
       {calculatedValues && (
-        <Card style={[styles.card, styles.resultCard]}>
+        <Card style={[styles.card, { backgroundColor: theme.colors.surfaceVariant }]}>
           <Card.Content>
-            <Title style={styles.resultTitle}>Calculation Results</Title>
+            <Title style={[styles.resultTitle, { color: theme.colors.onSurfaceVariant }]}>
+              Calculation Results
+            </Title>
             <View style={styles.resultRow}>
-              <Paragraph style={styles.resultLabel}>
+              <Paragraph style={[styles.resultLabel, { color: theme.colors.onSurfaceVariant }]}>
                 Upper Floor Units:
               </Paragraph>
-              <Paragraph style={styles.resultValue}>
+              <Paragraph style={[styles.resultValue, { color: theme.colors.onSurface }]}>
                 {calculatedValues.upperUnits}
               </Paragraph>
             </View>
             <View style={styles.resultRow}>
-              <Paragraph style={styles.resultLabel}>
+              <Paragraph style={[styles.resultLabel, { color: theme.colors.onSurfaceVariant }]}>
                 Ground Floor Units:
               </Paragraph>
-              <Paragraph style={styles.resultValue}>
+              <Paragraph style={[styles.resultValue, { color: theme.colors.onSurface }]}>
                 {calculatedValues.groundUnits}
               </Paragraph>
             </View>
-            <Divider style={styles.divider} />
+            <Divider style={[styles.divider, { backgroundColor: theme.colors.outline }]} />
             <View style={styles.resultRow}>
-              <Paragraph style={[styles.resultLabel, styles.boldText]}>
+              <Paragraph style={[styles.resultLabel, styles.boldText, { color: theme.colors.onSurfaceVariant }]}>
                 Ground Floor Bill:
               </Paragraph>
-              <Paragraph
-                style={[
-                  styles.resultValue,
-                  styles.boldText,
-                  styles.primaryText,
-                ]}
-              >
+              <Paragraph style={[
+                styles.resultValue, 
+                styles.boldText, 
+                { color: theme.colors.primary }
+              ]}>
                 ₹{calculatedValues.groundBill.toFixed(2)}
               </Paragraph>
             </View>
@@ -410,12 +410,9 @@ const styles = StyleSheet.create({
   button: {
     paddingVertical: 6,
   },
-  resultCard: {
-    backgroundColor: "#e8f5e9",
-  },
   resultTitle: {
     marginBottom: 12,
-    color: "#2e7d32",
+    fontWeight: 'bold',
   },
   resultRow: {
     flexDirection: "row",
@@ -432,9 +429,6 @@ const styles = StyleSheet.create({
   boldText: {
     fontWeight: "bold",
     fontSize: 18,
-  },
-  primaryText: {
-    color: "#2e7d32",
   },
 });
 
