@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "BilliT",
+    "slug": "billit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#6200ee"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.billit.app"
+    },
+    "android": {
+      "package": "com.billit.app"
+    }
+  }
+}
