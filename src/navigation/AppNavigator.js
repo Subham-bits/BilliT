@@ -22,14 +22,18 @@ const HomeStack = () => {
       screenOptions={{
         headerStyle: {
           backgroundColor: theme.colors.surface,
-          height: 50,
         },
         headerTitleStyle: {
-          fontSize: 16,
+          fontSize: 18,
           fontWeight: "600",
         },
         headerTintColor: theme.colors.onSurface,
         headerShadowVisible: false,
+        headerBackTitleVisible: false,
+        headerTitleAlign: 'center',
+        contentStyle: {
+          backgroundColor: theme.colors.background,
+        },
       }}
     >
       <Stack.Screen
@@ -59,14 +63,18 @@ const HistoryStack = () => {
       screenOptions={{
         headerStyle: {
           backgroundColor: theme.colors.surface,
-          height: 50,
         },
         headerTitleStyle: {
-          fontSize: 16,
+          fontSize: 18,
           fontWeight: "600",
         },
         headerTintColor: theme.colors.onSurface,
         headerShadowVisible: false,
+        headerBackTitleVisible: false,
+        headerTitleAlign: 'center',
+        contentStyle: {
+          backgroundColor: theme.colors.background,
+        },
       }}
     >
       <Stack.Screen
@@ -96,14 +104,18 @@ const SettingsStack = () => {
       screenOptions={{
         headerStyle: {
           backgroundColor: theme.colors.surface,
-          height: 50,
         },
         headerTitleStyle: {
-          fontSize: 16,
+          fontSize: 18,
           fontWeight: "600",
         },
         headerTintColor: theme.colors.onSurface,
         headerShadowVisible: false,
+        headerBackTitleVisible: false,
+        headerTitleAlign: 'center',
+        contentStyle: {
+          backgroundColor: theme.colors.background,
+        },
       }}
     >
       <Stack.Screen
